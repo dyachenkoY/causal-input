@@ -38,7 +38,6 @@ export default function FormulaInput() {
         data: suggestions = [],
         isLoading,
         isError,
-        error: queryError,
     } = useQuery({
         queryKey: ["suggestions", debouncedInputValue],
         queryFn: () => fetchSuggestions(debouncedInputValue),
